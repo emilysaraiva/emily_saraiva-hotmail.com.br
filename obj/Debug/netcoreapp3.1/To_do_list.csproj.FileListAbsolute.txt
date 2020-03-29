@@ -1,0 +1,13 @@
+C:\Users\emily.lira\Desktop\To_do_list\obj\Debug\netcoreapp3.1\To_do_list.csprojAssemblyReference.cache
+C:\Users\emily.lira\Desktop\To_do_list\obj\Debug\netcoreapp3.1\To_do_list.csproj.CoreCompileInputs.cache
+C:\Users\emily.lira\Desktop\To_do_list\obj\Debug\netcoreapp3.1\To_do_list.AssemblyInfoInputs.cache
+C:\Users\emily.lira\Desktop\To_do_list\obj\Debug\netcoreapp3.1\To_do_list.AssemblyInfo.cs
+C:\Users\emily.lira\Desktop\To_do_list\bin\Debug\netcoreapp3.1\To_do_list.exe
+C:\Users\emily.lira\Desktop\To_do_list\bin\Debug\netcoreapp3.1\To_do_list.deps.json
+C:\Users\emily.lira\Desktop\To_do_list\bin\Debug\netcoreapp3.1\To_do_list.runtimeconfig.json
+C:\Users\emily.lira\Desktop\To_do_list\bin\Debug\netcoreapp3.1\To_do_list.runtimeconfig.dev.json
+C:\Users\emily.lira\Desktop\To_do_list\bin\Debug\netcoreapp3.1\To_do_list.dll
+C:\Users\emily.lira\Desktop\To_do_list\bin\Debug\netcoreapp3.1\To_do_list.pdb
+C:\Users\emily.lira\Desktop\To_do_list\obj\Debug\netcoreapp3.1\To_do_list.dll
+C:\Users\emily.lira\Desktop\To_do_list\obj\Debug\netcoreapp3.1\To_do_list.pdb
+C:\Users\emily.lira\Desktop\To_do_list\obj\Debug\netcoreapp3.1\To_do_list.genruntimeconfig.cache
