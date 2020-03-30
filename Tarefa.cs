@@ -6,22 +6,20 @@ namespace To_do_list
 {
     public class Tarefa
     {
-        public string nomeTarefa;
+
         public int idTarefa = 1;
 
-        public bool statusDaTarefa;
 
 
-
-        public List<Tarefa> lista = new List<Tarefa>();
+        public List<task> lista = new List<task>();
 
 
 
         public void adicionarTarefa()
         {
-            Console.WriteLine("Dê um nome para sua tarefa: ");
+            Console.WriteLine("Qual o nome da sua tarefa?: ");
             string nome = Console.ReadLine();
-            lista.Add(new Tarefa
+            lista.Add(new task
             {
                 nomeTarefa = nome,
                 idTarefa = idTarefa++,
@@ -35,9 +33,18 @@ namespace To_do_list
             foreach (var cadaItem in lista)
             {
 
-                Console.WriteLine($"{cadaItem.idTarefa} - {cadaItem.nomeTarefa} - {statusDaTarefa}");
+                Console.WriteLine($"{cadaItem.idTarefa} - {cadaItem.nomeTarefa}");
 
-
+                if (cadaItem.statusDaTarefa)
+                {
+                    Console.WriteLine("feito");
+                    Console.WriteLine("-----------------");
+                }
+                else
+                {
+                    Console.WriteLine("Não feito");
+                    Console.WriteLine("-----------------");
+                }
 
             }
 
@@ -48,9 +55,9 @@ namespace To_do_list
             Console.WriteLine("Me passa ai o ID da tarefa: ");
             int tarefasDone = Convert.ToInt32(Console.ReadLine());
 
-            var resultado = lista.Where(x => x.idTarefa == tarefasDone);
+            var resultado = lista.Where(x => x.idTarefa == tarefasDone).First();
 
-            statusDaTarefa = true;
+            resultado.statusDaTarefa = true;
 
         }
 
