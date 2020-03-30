@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace To_do_list
 {
@@ -7,6 +8,8 @@ namespace To_do_list
     {
         public string nomeTarefa;
         public int idTarefa = 1;
+
+        public bool statusDaTarefa;
 
 
 
@@ -22,6 +25,7 @@ namespace To_do_list
             {
                 nomeTarefa = nome,
                 idTarefa = idTarefa++,
+                statusDaTarefa = false,
             });
 
         }
@@ -31,7 +35,10 @@ namespace To_do_list
             foreach (var cadaItem in lista)
             {
 
-                Console.WriteLine($"0{cadaItem.idTarefa} - {cadaItem.nomeTarefa}");
+                Console.WriteLine($"{cadaItem.idTarefa} - {cadaItem.nomeTarefa} - {statusDaTarefa}");
+
+
+
             }
 
         }
@@ -39,17 +46,11 @@ namespace To_do_list
         public void tarefasConcluidas()
         {
             Console.WriteLine("Me passa ai o ID da tarefa: ");
-            int tarefasDone = int.Parse(Console.ReadLine());
+            int tarefasDone = Convert.ToInt32(Console.ReadLine());
 
-            var teste = lista.Find(x => x.idTarefa == tarefasDone);
+            var resultado = lista.Where(x => x.idTarefa == tarefasDone);
 
-            if (teste != null)
-            {
-                Console.WriteLine($"{idTarefa} - {nomeTarefa} - Feita");
-            }else{
-                Console.WriteLine("Tarefa não encontrada");
-            }
-
+            statusDaTarefa = true;
 
         }
 

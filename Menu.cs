@@ -19,13 +19,12 @@ namespace To_do_list
 
              switch (escolhaDoUsuario)
             {
+                
                 case 0:
                     Console.WriteLine("Programa Finalizado!");
                 break;
 
                 case 1:
-                    Console.WriteLine("Voce escolheu a opção 1");
-                     
                      n.adicionarTarefa();
                      menuPrincipal();
 
@@ -40,7 +39,6 @@ namespace To_do_list
                     break;
 
                 case 3:
-                    Console.WriteLine("Voce escolheu a opção 3");
                     n.tarefasConcluidas();
                     menuPrincipal();
                     break;
